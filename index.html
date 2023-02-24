@@ -3,27 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Frontend Mentor | QR code component</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"/>
 
+    <title>Frontend Mentor | QR code component</title>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       body {
         height: 100%;
-        
+        font-family: "Outfit", sans-serif;
         background-color: hsl(212, 45%, 89%);
       }
 
@@ -33,7 +25,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
       }
 
       .card {
@@ -46,14 +37,13 @@
         display: flex;
         flex-direction: column;
         justify-items: center;
-        
       }
 
-      @media screen and (max-width: 376px){
-        .card{
+      @media screen and (max-width: 376px) {
+        .card {
           width: 80%;
-        }  
         }
+      }
 
       .qr_image {
         border-radius: 8px;
@@ -67,7 +57,6 @@
         align-items: center;
       }
       .heading {
-        font-family: "Outfit", sans-serif;
         font-weight: 700;
         color: hsl(218, 44%, 22%);
         font-size: 1.3em;
@@ -75,7 +64,6 @@
       }
 
       .text {
-        font-family: "Outfit", sans-serif;
         font-weight: 400;
         color: hsl(220, 15%, 55%);
         font-size: 1em;
@@ -85,23 +73,25 @@
   </head>
   <body>
     <main>
-     
-    <div class="container" role="main">
-      <div class="card" role="card">
-        <img src="qr-code-component-main\images\image-qr-code.png" alt="qr-code" class="qr_image" />
-        <div class="textContainer" role="text">
-          <h1 class="heading">
-            Improve your front-end skills by building projects
-          </h1>
+      <div class="container" role="main">
+        <div class="card" role="card">
+          <img
+            src="qr-code-component-main\images\image-qr-code.png"
+            alt="qr-code"
+            class="qr_image"
+          />
+          <div class="textContainer" role="text">
+            <h1 class="heading">
+              Improve your front-end skills by building projects
+            </h1>
 
-          <p class="text">
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
+            <p class="text">
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-     
-  </main>
+    </main>
   </body>
 </html>
