@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        height: 100%;
+        
+        background-color: hsl(212, 45%, 89%);
+      }
+
+      .container {
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      .card {
+        margin: 0;
+        background-color: hsl(0, 0%, 100%);
+        width: 20%;
+        height: fit-content;
+        border-radius: 10px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        
+      }
+
+      @media screen and (max-width: 376px){
+        .card{
+          width: 80%;
+        }  
+        }
+
+      .qr_image {
+        border-radius: 8px;
+        width: 100%;
+      }
+      .textContainer {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+      }
+      .heading {
+        font-family: "Outfit", sans-serif;
+        font-weight: 700;
+        color: hsl(218, 44%, 22%);
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .text {
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: hsl(220, 15%, 55%);
+        font-size: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src=".\images\image-qr-code.png" alt="qr-code" class="qr_image" />
+        <div class="textContainer">
+          <p class="heading">
+            Improve your front-end skills by building projects
+          </p>
+
+          <p class="text">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
